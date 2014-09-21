@@ -32,6 +32,24 @@ Running the tests
     cd server/system-tests
     make test
 
+Deploy to Heroku
+----------------
+
+    # Create new Heroku app
+    heroku create
+    
+    # Push repository to Heroku
+    git push heroku master
+    
+    # Scale to one dyno (optionally)
+    heroku ps:scale web=1
+
+    # Test run of your app
+    heroku open
+
+In the next section described process of local testing your app. For testing
+Heroku app just change "localhost:8080" with "your-app-name"
+
 API usage examples
 ------------------
 
