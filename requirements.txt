@@ -1,0 +1,4 @@
+web.py
+requests
+couchdb
+python-openid
